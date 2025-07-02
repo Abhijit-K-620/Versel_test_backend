@@ -17,7 +17,9 @@ const app = express();
 
 await connectCloudinary();
 // allow multiple origins
-const allowedOrigins = ["https://versel-test-backend.onrender.com/"];
+const allowedOrigins = [
+  "https://versel-test-git-main-abhijit-kumars-projects-91453ad7.vercel.app/",
+];
 //middlewares
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(cookieParser());
